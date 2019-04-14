@@ -1,0 +1,29 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "eqeqeq": "off",
+      "curly": "error",
+      "linebreak-style": ["error", "unix"],
+      "quotes": ["error", "double"],
+      "indent": ["error", 2],
+      "comma-dangle": ["error", "always"],
+      "no-cond-assign": ["error", "always"],
+      "max-len": [1, 120, 2, {"ignoreComments": true}],
+      "react/prop-types": ["warn"],
+      "strict": "warn"
+    },
+    "settings": {
+      "import/parser": "babel-eslint",
+      "import/resolve": {
+        "moduleDirectory": ["node_modules", "src"]
+      },
+      "react": {
+        "pragma": "React",
+        "version": "16.8.4"
+      }
+    },    
+    "root": true
+}
